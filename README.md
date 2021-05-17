@@ -34,16 +34,16 @@ Open http://localhost:5000 to view it in browser
 
 - Login Page
 
-![alt text](https://github.com/Plaksha05/blogster/blob/master/1.png?raw=true)
+![plot](./public/1.png)
 
 - Add Post
 
-![alt text](https://github.com/Plaksha05/blogster/blob/master/2.png?raw=true)
+![plot](./public/2.png)
 
 - My Posts
 
-![alt text](https://github.com/Plaksha05/blogster/blob/master/3.png?raw=true)
+![plot](./public/3.png)
 
 - All Posts
 
-![alt text](https://github.com/Plaksha05/blogster/blob/master/4.png?raw=true)
+![plot](./public/4.png)
