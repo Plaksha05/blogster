@@ -1,0 +1,54 @@
+<div class="container">
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="/dashboard">Welcome <%= name %></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<ul class="nav nav-tabs">
+			<!-- <li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="/dashboard/posts">All Posts</a>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="/dashboard/posts">All posts</a>
+			  </li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/dashboard/myposts">My posts</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/users/logout">Logout</a>
+			</li>
+		  </ul>
+	</nav>
+
+
+	<div class="row mt-5">
+		<div class="col-md-6 m-auto">
+			<div class="card card-body">
+				<form action="/dashboard" method="POST">
+					
+					<div class="form-group">
+					<label >Title</label>
+					<input
+						type="text"
+						name="title"
+						class="form-control"
+						placeholder="Enter Title"
+					/>
+					</div>
+					<div class="form-group">
+					<label for="exampleFormControlTextarea1">Content</label>
+					<textarea
+						type="text"
+						name="content"
+						class="form-control"
+						id="exampleFormControlTextarea1" rows="3"
+						placeholder="Enter content">
+					</textarea>
+					</div>
+					<button type="submit" class="btn btn-primary btn-block" >Add post</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
