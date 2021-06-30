@@ -6,7 +6,7 @@
 - These blogs can can be used to publish interesting facts, motivational writings or any other data required to be shared among a common group of people.
 - People who are logged in can view their posts as well as all the posts by other people.
 
-##Features
+## Features
 
 - A person has to first register.
 - Then he can login any time.
@@ -29,3 +29,21 @@ If using Atlas, Create a `.env` file in `blogster` and add your MongoDB URI.
 This will run the app in development mode
 
 Open http://localhost:5000 to view it in browser
+
+## Images of web app
+
+- Login Page
+
+![plot](./public/1.png)
+
+- Add Post
+
+![plot](./public/2.png)
+
+- My Posts
+
+![plot](./public/3.png)
+
+- All Posts
+
+![plot](./public/4.png)
