@@ -13,7 +13,8 @@
 - One can view all the posts added by others.
 - One can view their own posts.
 - One can add a new post.
-- Then logout.
+- Search for a post by author's name
+- Logout.
 
 ## Steps to use the code
 
