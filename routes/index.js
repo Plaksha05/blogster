@@ -22,9 +22,9 @@ router.get('/dashboard', ensureAuthenticated, (req,res) => {
 
 router.get('/dashboard/myposts', ensureAuthenticated, (req,res) => {
     
-    console.log(req.user.name)
+    
     Post.find({name: req.user.name}, function(err, data) {
-        console.log(data);
+        
         res.render('myposts.ejs', {
             name : req.user.name,
             data: data
@@ -65,14 +65,26 @@ router.post('/dashboard', ensureAuthenticated,  (req,res) => {
     
 })
 
-router.post('/dashboard/search', ensureAuthenticated, (req,res) =>{
+router.get('/dashboard/search', ensureAuthenticated, (req,res) => {
     
-    Post.find ( {name: req.body.search_name} ), function(err,data){
+
+    const search_nm=req.session.message;
+    // console.log(search_nm);
+    Post.find ( {name: search_nm} , function(err,data){
+        // if(err) throw esrr;
+        // console.log(data);
+        
         res.render('myposts.ejs',{
-            name: req.body.search_name,
+            name: req.body.search_nm,
             data: data
         })
-    }
+    })
+})
+
+router.post('/dashboard/search', ensureAuthenticated, (req,res) =>{
+    // console.log(req.body.search_name);
+    req.session.message=req.body.search_name;
+    res.redirect('/dashboard/search');
 })
 
 
